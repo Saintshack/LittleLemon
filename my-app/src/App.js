@@ -2,9 +2,27 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment>
+      <Header>
+       <img src = "Photo.jpg"></img>
+      </Header>
+      <Nav>
+        <ul>
+          <li><a href = ""></a></li>
+          <li><a href = ""></a></li>
+          <li><a href = ""></a></li>
+          <li><a href = ""></a></li>
+        </ul>
+      </Nav>
+      <Main> 
 
-    </div>
+      </Main>
+      <Footer>
+        <caption>
+          Copyright Little Lemon
+        </caption>
+      </Footer>
+    </React.Fragment>
   );
 }
 
