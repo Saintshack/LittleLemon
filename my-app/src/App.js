@@ -9,6 +9,7 @@ function App() {
       <meta name="og:description" content="The Little Lemon Website"/>
       <meta name="og:image" content="Little Lemon Logo"/>
        <img src = "Photo.jpg"></img>
+       <link rel = "stylesheet" href = "App.css"></link>
       </Header>
       <Nav>
         <ul>
