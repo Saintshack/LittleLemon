@@ -1,7 +1,11 @@
+import {Routes, Route, Link} from 'react-router-dom';
 import AnotherPhoto from './AnotherPhoto.png'
 import Photo from './Photo.jpg';
-import React,{ReactHTML} from 'react';
+import React from 'react';
 import './App.css';
+import Cart from'./Cart'
+import Menu from './Menu'
+import ReserveATable from './ReserveATable';
 
 function App() {
   return (
@@ -14,17 +18,22 @@ function App() {
       <link rel = "stylesheet" href = "App.css"></link>
       <img src = {Photo} width = "50" height = "50" alt="Photo"></img>
       </header>
-      <nav>
-        <ul class = "Links">
-          <li><a href = "Menu">Menu</a></li>
-          <li><a href = "">Reserve a Table</a></li>
-          <li><a href = "">Cart</a></li>
-        </ul>
+      <div>
+      <nav className = "Links">
+        <Link to ="/menu" className="nav-item">Menu</Link>
+        <Link to = "/reserveatable" className="nav-item">Reserve a Table</Link>
+        <Link to="/cart" className="nav-item">Cart</Link>
+      </nav>
+      <Routes>
+        <Route path="/menu" element={<Menu/>}></Route>
+        <Route path="/reserveatable" element={<ReserveATable/>}></Route>
+        <Route path="/cart" element={<Cart/>}></Route>
+      </Routes>
+      </div>
+      <main>
       <h1>Little Lemon</h1>
       <p>Chicago</p>
       <img src = {AnotherPhoto} width = "350" height = "200" alt="AnotherPhoto"></img>
-      </nav>
-      <main>
         <article>
         <section>
         <h2>About Little Lemon</h2>
