@@ -1,30 +1,66 @@
-.App {
+* {
+  text-align: left;
+}
+
+img {
+  border-radius: 8px;
+}
+
+nav {
+  min-height: 30vh;
+  display: grid;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  color: #eaff00;
+}
+
+.Links{
+  display: inline-flex;
+  flex-flow: row wrap;
+  background-color: rgb(238, 255, 0);
+  justify-content: stretch;
+  }
+  
+  .Links li{
+  list-style-type: none;
+  font-size: 20px;
+  
+  }
+  
+  
+  .Links a{
+  display: inline-flex;
+  margin: 10px;
+  padding: 0 20px;
   text-align: center;
+  text-decoration: none;
+  color: white
+  
+  
+  }
+  
+  .Links a:hover{
+      background-color: rgb(0, 216, 11);
+  }
+
+
+nav h1{
+  font-size: 35px;
+  min-height: 2vh;
+  display: grid;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  color: #eaff00;
 }
 
-
-.App-Header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main {
+  display: grid;
+  color: #095e00;
 }
 
-.App-Nav {
-  display: flex;
-  color: #eefb61;
-}
-
-.App-Main {
-  display: flex;
-  color: #0e8e00;
-}
-
-.App-Footer {
-  display: flex;
-  color: #eefb61;
+footer {
+  display: grid;
+  color: #000000;
 }
