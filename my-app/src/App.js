@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import './App.css';
 import Header from './Header';
 import Nav from './Nav'
@@ -10,11 +10,9 @@ function App() {
     <React.Fragment>
       <Header />
       <Nav />
-
       <Main />
       <Footer />
-
-      </React.Fragment>
+    </React.Fragment>
 
 
      );
