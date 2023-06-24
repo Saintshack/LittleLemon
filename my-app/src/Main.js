@@ -1,21 +1,10 @@
 import React from 'react';
 import AnotherPhoto from './AnotherPhoto.png';
-import Cart from './Cart';
-import ReserveATable from './ReserveATable';
-import Menu from './Menu';
-import { Routes, Route } from 'react-router-dom';
+
 
 function Main() {
   return (
-    <React.Component>
       <main>
-        <Routes>
-          <Route element={<Menu />} path="/menu" />
-
-          <Route element={<ReserveATable />} path="/reserveatable" />
-
-          <Route element={<Cart />} path="/cart" />
-        </Routes>
 
         <h1>Little Lemon</h1>
 
@@ -33,7 +22,6 @@ function Main() {
           </section>
         </article>
       </main>
-    </React.Component>
   );
 }
 

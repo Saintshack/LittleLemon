@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
   return (
-    <React.Component>
       <div>
         <nav>
-          <Link className="nav-item" to="/menu">Menu</Link>
+          <ul>
+          <li><Link to="/menu" className="nav-item">Menu</Link></li>
 
-          <Link className="nav-item" to="/reserveatable">Reserve a Table</Link>
+          <li><Link to="/reserveatable" className="nav-item">Reserve a Table</Link></li>
 
-          <Link className="nav-item" to="/cart">Cart</Link>
+          <li><Link to="/cart" className="nav-item">Cart</Link></li>
+          </ul>
         </nav>
       </div>
-    </React.Component>
 
   );
 }
